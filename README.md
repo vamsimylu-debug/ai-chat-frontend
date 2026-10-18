@@ -91,6 +91,3 @@ Run the configured tests using the script defined in `package.json`.
 - Remember that configuration included in a browser application is visible to users.
 - Keep local environment files and confidential configuration out of source control.
 
-## License
-
-Add a license only when you have the right to publish the project under that license.
