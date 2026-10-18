@@ -1,59 +1,96 @@
-# NexaltaAiChat
+﻿# AI Chat Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+An Angular web application that provides a chat interface for interacting with an assistant API.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Angular-based chat user interface.
+- Communication with a backend REST API.
+- TypeScript-based application logic.
+- Component styling and responsive UI structure.
+- Automated tests using the configured Angular test tooling.
 
-```bash
-ng serve
-```
+## Technology Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Angular
+- TypeScript
+- HTML and CSS
+- Node.js and npm
+- REST API integration
 
-## Code scaffolding
+## Prerequisites
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Node.js version compatible with the project.
+- npm.
+- The companion backend API running and correctly configured.
 
-```bash
-ng generate component component-name
-```
+## Getting Started
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### 1. Clone the repository
 
 ```bash
-ng build
+git clone https://github.com/vamsimylu-debug/ai-chat-frontend.git
+cd ai-chat-frontend
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### 2. Install dependencies
 
 ```bash
-ng test
+npm ci
 ```
 
-## Running end-to-end tests
+### 3. Configure the backend URL
 
-For end-to-end (e2e) testing, run:
+The frontend currently uses the local backend endpoint:
+
+```text
+http://localhost:5163/api/assistant/ask
+```
+
+Make sure the backend is running at this address. If the backend uses another port, update the API URL in the frontend configuration accordingly.
+
+### 4. Start the development server
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open the application at:
 
-## Additional Resources
+```text
+http://localhost:4200
+```
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Development
+
+To build the application:
+
+```bash
+npm run build
+```
+
+Run the configured tests using the script defined in `package.json`.
+
+## Project Structure
+
+```text
+.
+├── public/
+├── src/
+│   ├── app/
+│   └── index.html
+├── angular.json
+├── package.json
+├── package-lock.json
+└── tsconfig.json
+```
+
+## Security
+
+- Do not store API keys, passwords, or private credentials in frontend source code.
+- Remember that configuration included in a browser application is visible to users.
+- Keep local environment files and confidential configuration out of source control.
+
+## License
+
+Add a license only when you have the right to publish the project under that license.
